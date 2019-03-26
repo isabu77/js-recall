@@ -57,18 +57,8 @@ var reverseWordsInArray = function(array) {
     var chaine = [];
     for (i=0; i < array.length; i++)
     {
-         var chaine = array[i].split();
-        //chaine = array[i];
-        //resultArray.push(array[i]);
-        //resultArray.push(array[i].reverseWordsInArray());
-        var k = 0;
-        for (j = array[i].length-1; j >= 0; j--){
-           chaine[k] = array[i][j];
-            k++;
-        }
-        chaine.split;
-       resultArray.push(chaine);
- 
+        resultArray.push(array[i].split("").reverse().join(""));
+  
     }
     return resultArray;
 }
