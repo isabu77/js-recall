@@ -127,19 +127,27 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
+    //return string;
     var array = string.split('');
     var resultArray = [];
-    String str;
-     for (i=0; i < array.length/2; i++)
+    var str;
+    if (array.length%2){
+       array.push('g');
+
+    }
+     for (i=0; i < (array.length)/2; i++)
     {
         resultArray.push(array[i]);
     }
-    str = resultArray[i].split("");
+    str = resultArray.join("");
     return str;
 }
 
 var makeNegative = function(number) {
-    return 'Write your method here';
+    //var num = parseInt(number);
+    //return (-num);
+    //var num = -Math.abs(number);
+    return (number);
 }
 
 var numberOfPalindromes = function(array) {
