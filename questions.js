@@ -111,7 +111,19 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
-    return 'Write your method here';
+    //return array;
+    var resultArray1 = [];
+    var resultArray = [];
+     for (i=0; i < array.length; i++)
+    {
+        resultArray.push(array[i].split("").reverse().join(""));
+    }
+    resultArray = resultArray.sort();
+     for (i=0; i < resultArray.length; i++)
+    {
+        resultArray1.push(resultArray[i].split("").reverse().join(""));
+    }
+     return resultArray1;
 }
 
 var getFirstHalf = function(string) {
