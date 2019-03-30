@@ -90,11 +90,17 @@ var everyPossiblePair = function(array) {
 }
 
 var allElementsExceptFirstThree = function(array) {
-    return 'Write your method here';
+    var resultArray = [];
+    for (i=3; i < array.length; i++)
+    {
+        resultArray.push(array[i]);
+  
+    }
+    return resultArray;
 }
 
 var addElementToBeginning = function(array, element) {
-    return 'Write your method here';
+    return array;
 }
 
 var sortByLastLetter = function(array) {
