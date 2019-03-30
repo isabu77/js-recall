@@ -144,10 +144,13 @@ var getFirstHalf = function(string) {
 }
 
 var makeNegative = function(number) {
-    //var num = parseInt(number);
-    //return (-num);
+    var num = -number;
+    if (number < 0 )
+        return number;
+    else
+        return num
     //var num = -Math.abs(number);
-    return (number);
+    //return (number);
 }
 
 var numberOfPalindromes = function(array) {
