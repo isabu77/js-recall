@@ -127,7 +127,15 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
-    return 'Write your method here';
+    var array = string.split('');
+    var resultArray = [];
+    String str;
+     for (i=0; i < array.length/2; i++)
+    {
+        resultArray.push(array[i]);
+    }
+    str = resultArray[i].split("");
+    return str;
 }
 
 var makeNegative = function(number) {
