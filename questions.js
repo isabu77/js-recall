@@ -341,7 +341,39 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-    return 'Write your method here';
+    var array = string.split(".");
+    var str = "";
+    var resultArray = [];
+    var i;
+    for (i = 0 ; i < array.length ; i++){
+        
+        if (array[i].charAt(0) === ' ')
+            array[i] = array[i].charAt(0) + array[i].charAt(1).toUpperCase() + array[i].slice(2);
+        else
+            array[i] = array[i].charAt(0).toUpperCase()  + array[i].slice(1);
+
+        if (array.length > 1 && i < (array.length-1))
+            str += array[i] + ".";
+        else
+           str += array[i];
+    }
+    array = str.split(" ");
+    for (i = 0 ; i < array.length ; i++){
+        // array[i] est une chaine : mettre en majuscule la première lettre
+        if (array[i] != 'the' && array[i] != 'and')
+        {
+            var newStr = "";
+            newStr = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+            resultArray.push(newStr);
+        }
+        else{
+            resultArray.push(array[i]);
+        }
+
+
+     }
+
+    return resultArray.join(" ");
 }
 
 var checkForSpecialCharacters = function(string) {
