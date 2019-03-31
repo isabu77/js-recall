@@ -154,7 +154,18 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-    return 'Write your method here';
+    var chaine, chainereverse;
+    var nb = 0;
+    var i;
+     for (i=0; i < array.length; i++)
+    {
+        chaine = array[i].split("").join()
+        chainereverse = array[i].split("").reverse().join();
+        if (chaine === chainereverse){
+            nb++;
+        }
+    }
+    return nb;
 }
 
 var shortestWord = function(array) {
