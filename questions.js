@@ -310,7 +310,18 @@ var roundUp = function(number) {
 }
 
 var formatDateNicely = function(date) {
-    return 'Write your method here';
+    var dateResult = "";
+    //var options = {year: "numeric", month: "long", day: "numeric"};
+    //dateResult = date.toLocaleString('fr-FR', options);
+    if (date.getUTCDate() < 10){
+        dateResult = "0";
+    }
+    dateResult = dateResult + date.getUTCDate() + "/";
+     if ((date.getMonth()+1) < 10){
+        dateResult += "0";
+    }
+    dateResult += (date.getMonth()+1) + "/" + date.getFullYear();
+  return dateResult;
 }
 
 var getDomainName = function(string) {
