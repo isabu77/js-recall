@@ -306,7 +306,7 @@ var removeCapitals = function(string) {
 }
 
 var roundUp = function(number) {
-    return 'Write your method here';
+    return Math.round(number)+1;
 }
 
 var formatDateNicely = function(date) {
