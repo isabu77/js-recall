@@ -325,7 +325,19 @@ var formatDateNicely = function(date) {
 }
 
 var getDomainName = function(string) {
-    return 'Write your method here';
+    var result = "";
+    var ind1 = string.indexOf("@");
+    if (ind1 === -1)
+        ind1 = 0;
+
+    var ind2 = string.length;
+    var indpoint = string.indexOf(".");
+    while(indpoint != -1){
+        ind2 = indpoint;
+        indpoint = string.indexOf(".", ind2+1);
+    }
+    result = string.substring((ind1+1), ind2);
+    return result;
 }
 
 var titleize = function(string) {
