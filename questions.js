@@ -206,7 +206,12 @@ var sumNumbers = function(array) {
 }
 
 var repeatElements = function(array) {
-    return 'Write your method here';
+    var i, nb = array.length;
+    for (i=0; i < nb; i++)
+    {
+        array.push(array[i]);
+    }
+    return array;
 }
 
 var stringToNumber = function(string) {
