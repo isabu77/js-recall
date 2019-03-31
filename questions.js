@@ -169,11 +169,31 @@ var numberOfPalindromes = function(array) {
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    var indice = 0;
+    var taillemin = array[0].length;
+    var i;
+     for (i=0; i < array.length; i++)
+    {
+        if (array[i].length < taillemin){
+            taillemin = array[i].length;
+            indice = i;
+        }
+    }
+    return array[indice];
 }
 
 var longestWord = function(array) {
-    return 'Write your method here';
+    var indice = 0;
+    var taillemax = 0;
+    var i;
+     for (i=0; i < array.length; i++)
+    {
+        if (array[i].length > taillemax){
+            taillemax = array[i].length;
+            indice = i;
+        }
+    }
+    return array[indice];
 }
 
 var sumNumbers = function(array) {
