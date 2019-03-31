@@ -219,7 +219,13 @@ var stringToNumber = function(string) {
 }
 
 var calculateAverage = function(array) {
-    return 'Write your method here';
+    var i, nb = 0;
+    var average = 0;
+    for (i=0; i < array.length; i++)
+    {
+        nb = nb + array[i];
+    }
+    return nb/array.length;
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
