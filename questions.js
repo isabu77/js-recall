@@ -243,6 +243,7 @@ var getElementsUntilGreaterThanFive = function(array) {
 }
 
 var convertArrayToObject = function(array) {
+    var i;
     var objet= {};
     for (i=0; i < array.length; i = i + 2)
     {
@@ -253,7 +254,18 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-    return 'Write your method here';
+    var i,j;
+    var resultArray = [];
+    var mot;
+    for (i=0; i < array.length; i++)
+    {
+        mot = array[i].split("");
+        for (j = 0 ; j < mot.length ; j++){
+            if (resultArray.indexOf(mot[j]) === -1)
+                resultArray.push(mot[j]);              
+        }
+    }
+    return (resultArray.sort());
 }
 
 var swapKeysAndValues = function(object) {
