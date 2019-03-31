@@ -294,7 +294,15 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
-    return 'Write your method here';
+    var i;
+    var result = "";
+    for (i=0; i < string.length; i++)
+    {
+        if (string[i].toUpperCase() != string[i] || string[i] === ' ')
+            result += string[i];
+    }
+   
+    return result;
 }
 
 var roundUp = function(number) {
