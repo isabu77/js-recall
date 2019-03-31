@@ -243,7 +243,13 @@ var getElementsUntilGreaterThanFive = function(array) {
 }
 
 var convertArrayToObject = function(array) {
-    return 'Write your method here';
+    var objet= {};
+    for (i=0; i < array.length; i = i + 2)
+    {
+        objet[array[i]] = array[i+1];
+    }
+
+    return objet;
 }
 
 var getAllLetters = function(array) {
