@@ -282,7 +282,15 @@ var swapKeysAndValues = function(object) {
 }
 
 var sumKeysAndValues = function(object) {
-    return 'Write your method here';
+    var i,sum = 0;
+    var cles = Object.keys(object);
+    var valeurs = Object.values(object);
+     for (i=0; i < cles.length; i++)
+    {
+        sum += parseInt(valeurs[i]) + parseInt(cles[i]);
+    }
+   
+    return sum;
 }
 
 var removeCapitals = function(string) {
