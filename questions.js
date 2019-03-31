@@ -269,7 +269,16 @@ var getAllLetters = function(array) {
 }
 
 var swapKeysAndValues = function(object) {
-    return 'Write your method here';
+    var i;
+    var resultobjet = {};
+    var cles = Object.keys(object);
+    var valeurs = Object.values(object);
+     for (i=0; i < cles.length; i++)
+    {
+        resultobjet[valeurs[i]] = cles[i];
+    }
+   
+    return resultobjet;
 }
 
 var sumKeysAndValues = function(object) {
