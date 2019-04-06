@@ -377,8 +377,19 @@ var titleize = function(string) {
 }
 
 var checkForSpecialCharacters = function(string) {
-    return 'Write your method here';
-}
+    var i;
+    for (i=0; i < string.length; i++)
+    {
+        if ( ! ((string[i] >= 'a' && string[i] <= 'z' )
+                || (string[i] >= 'A' && string[i] <= 'Z' ) 
+                || (string[i] >= '0' && string[i] <= '9' )
+                ) ){
+            return(true);
+        }
+    }
+    return (false);
+}  
+ 
 
 var squareRoot = function(number) {
     return 'Write your method here';
