@@ -392,7 +392,7 @@ var checkForSpecialCharacters = function(string) {
  
 
 var squareRoot = function(number) {
-    return 'Write your method here';
+    return Math.sqrt(number);
 }
 
 var factorial = function(number) {
