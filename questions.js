@@ -405,13 +405,26 @@ var factorial = function(number) {
 }
 
 var findAnagrams = function(string) {
-    return 'Write your method here';
 }
 
 var convertToCelsius = function(number) {
-    return 'Write your method here';
+    var valNum = parseFloat(number);
+    valNum = (valNum-32) / 1.8;
+
+    return( Math.round(valNum));
 }
 
 var letterPosition = function(array) {
-    return 'Write your method here';
+    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+    "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
+    "w", "x", "y", "z"];   
+    var resultArray = [];
+    var i;
+    for (i = 0 ; i < array.length ; i++){
+        var posit = alphabet.indexOf(array[i].toLowerCase());
+         if (posit > -1) {
+            resultArray.push(posit + 1);
+        }
+    }
+    return (resultArray);
 }
